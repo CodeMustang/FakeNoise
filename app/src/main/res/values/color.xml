@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "tabColor">#f2180b</color>
+    <color name = "toolbarColor">#3f51b5</color>
+    <color name="fragTabsColor">#5c6bc0</color>
+    <color name = "textContactColor">#030500</color>
+    <color name="element_bg">#ff3c15</color>
+    <color name="background_btn">#9e9e9e</color>
+    <color name="add_btn_text">#74000f</color>
+    <color name="first_selector">#e9d646</color>
+    <color name="second_selector">#e98d0e</color>
+    <color name="selector_presed">#ffffff</color>
+    <color name="selectedContactsBackground">#7e57c2</color>
+    <color name="shadow">#454545</color>
+    <color name = "contact_item_color">#a30c09</color>
+    <color name="contact_item_layout">#d1c4e9</color>
+    <color name="grid_noise_color">#f7fff6</color>
+    <color name="grid_view_color">#ffffff</color>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_layout_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:nextFocusForward="@+id/phone_edit_text"
+            android:textSize = "25sp"
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Type Contact Name Here" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below = "@+id/text_layout_first"
+        android:id="@+id/text_layout_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType = "phone"
+            android:textSize = "25sp"
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:maxLength="11"
+            android:layout_height="match_parent"
+            android:hint="Type Contact Ph. Number here" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/selectedContactsBackground"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:fitsSystemWindows="true">
+    <com.github.ksoichiro.android.observablescrollview.ObservableListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.github.ksoichiro.android.observablescrollview.ObservableListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id = "@+id/add_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:src= "@drawable/ic_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/textContactColor"
+        android:layout_gravity="center"
+        android:text="@string/welcome"
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!-- Adding the CoordinatorLayout at the bottom solves the issue
+    when the snackbar overlays your FAB , also add the LinearLayout
+    so you can add the CoordinatorLayout -->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbar"
+        android:background="@color/selectedContactsBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FakeNoise</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_add_contact">+</string>
+    <string name="welcome">No Contacts! \nPress the button to add one</string>
+</resources>

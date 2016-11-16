@@ -5,4 +5,10 @@
     <string name="action_settings">Settings</string>
     <string name="btn_add_contact">+</string>
     <string name="welcome">No Contacts! \nPress the button to add one</string>
+    <string name="delete_item">Delete item</string>
+    <string name="record_default_title">Start Recording.</string>
+    <string name="record_start_title">Recording…</string>
+    <string name="no_sounds_n_add_new_ones_below">No sounds.\n Add new ones below !</string>
+    <string name="ok_btn">Ok</string>
+    <string name="logs">No log currently registered!</string>
 </resources>

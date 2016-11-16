@@ -6,30 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <TextView
+        android:id="@+id/status_screen"
+        android:textSize="20sp"
+        android:textColor="@color/textContactColor"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/no_sounds_n_add_new_ones_below"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <com.github.ksoichiro.android.observablescrollview.ObservableGridView
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_margin="10dp"
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnWidth="120dp"
         android:numColumns="auto_fit"
-        android:verticalSpacing="5dp"
-        android:horizontalSpacing="5dp"
         android:stretchMode="columnWidth"
+        android:horizontalSpacing="10dp"
         android:gravity="center">
 </com.github.ksoichiro.android.observablescrollview.ObservableGridView>
     <android.support.design.widget.FloatingActionButton
         android:id = "@+id/add_noise_btn"
+        android:onClick="RecordNoise"
         app:fabSize="normal"
-        android:src= "@drawable/ic_action"
+        android:src="@drawable/noise_fab"
+        app:backgroundTint="@color/fab_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_anchor="@id/gridview"
         app:layout_anchorGravity="bottom|right|end"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
         />
+
 </android.support.design.widget.CoordinatorLayout>

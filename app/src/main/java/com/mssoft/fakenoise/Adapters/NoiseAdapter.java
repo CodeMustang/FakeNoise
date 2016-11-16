@@ -1,7 +1,6 @@
 package com.mssoft.fakenoise.Adapters;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,11 +9,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.mssoft.fakenoise.NoiseSounds;
+import com.mssoft.fakenoise.Utilities.NoiseSounds;
 import com.mssoft.fakenoise.R;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Created by Marius on 9/28/2015.
@@ -57,6 +55,7 @@ public class NoiseAdapter extends BaseAdapter {
         if (convertView == null) {
             LayoutInflater inflater = LayoutInflater.from(context);
             convertView = inflater.inflate(R.layout.grid_noise_layout, parent, false);
+
 
             holder.img = (ImageView) convertView.findViewById(R.id.noise_image);
             holder.tv = (TextView) convertView.findViewById(R.id.noise_text);

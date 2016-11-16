@@ -13,5 +13,5 @@
         <item name="android:layout_height">1dp</item>
         <item name="android:background">?android:attr/listDivider</item>
     </style>
-
+    <!-- after API 23 the dialog title will not show up if you don't use this. -->
 </resources>

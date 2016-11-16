@@ -1,9 +1,11 @@
 package com.mssoft.fakenoise.Constants;
 
+import android.os.Environment;
+
 /**
  * Created by Marius on 10/4/2015.
  */
-public class Contants {
+public class Constants {
 
     private static final int REQUEST_CONTACT = 1;
     private static final int REQUEST_KEYPAD = 2;
@@ -16,7 +18,6 @@ public class Contants {
     private static final String COLUMN_PHONE = "phone";
     private final String error ="Some error occured , please choose a different number";
 
-    private final CharSequence[] BGNOISE_LIST = {"Implicit Sound ","Record"};
     private final String BGNOISE_DIALOG_TITLE = "Choose noise from ...";
 
     /******** SELECTED CONTACTS FRAGMENT ***********************/
@@ -60,9 +61,7 @@ public class Contants {
 
    /**************** BACKGROUND NOISE FRAGMENT *************/
 
-    public CharSequence[] getBackgroundNoiseDialogSelectionList(){
-        return BGNOISE_LIST;
-    }
+
 
     public String getBackgroundNoiseDialogTitle(){
         return BGNOISE_DIALOG_TITLE;
@@ -70,4 +69,10 @@ public class Contants {
 
 
     /****************** BACKGROUND NOISE FRAGMENT *****************/
+
+    /***************DIRECTORY NOISE SOUNDS ************************/
+    public final static String AUDIO_PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/FakeNoises";
+
+    /***********************RECEIVER *******************************/
+    public final static String BROADCAST = "com.mssoft.fakenoise.MainActivity";
 }

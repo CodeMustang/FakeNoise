@@ -2,10 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Enter details : "
+        android:textSize="20dp"
+        android:textColor="@color/textContactColor"/>
+    <LinearLayout
+        android:id="@+id/keypad_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
     <android.support.design.widget.TextInputLayout
         android:id="@+id/text_layout_first"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
 
         <EditText
             android:nextFocusForward="@+id/phone_edit_text"
@@ -13,22 +29,33 @@
             android:id="@+id/name_edit_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Type Contact Name Here" />
+            android:hint="Contact Name"
+            android:textColorHint="@color/fab_color"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:layout_below = "@+id/text_layout_first"
         android:id="@+id/text_layout_second"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
 
         <EditText
             android:inputType = "phone"
             android:textSize = "25sp"
             android:id="@+id/phone_edit_text"
             android:layout_width="match_parent"
-            android:maxLength="11"
+            android:maxLength="15"
             android:layout_height="match_parent"
-            android:hint="Type Contact Ph. Number here" />
+            android:hint="Phone Number"
+            android:textColorHint="@color/fab_color"/>
     </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit_keypad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dialog_button"
+        android:text="Submit"/>
 </RelativeLayout>
